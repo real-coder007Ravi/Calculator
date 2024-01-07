@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Calculator</title>
+		<link
+			rel="shortcut icon"
+			href="assets/images/calculator-logo.jpeg"
+			type="image/x-icon"
+		/>
+		<link rel="stylesheet" href="css/styles.css" />
+	</head>
+	<body>
+		<header>
+			<h1>Calculator</h1>
+			<a href="#calculate" target="_self"> Calculate Your Result Below: </a>
+		</header>
+
+		<main id="calculate">
+			<div class="container">
+				<div class="calculator">
+					<form>
+						<div class="display">
+							<input type="text" name="display" title="show output" />
+						</div>
+						<div>
+							<input
+								type="button"
+								value="AC"
+								class="operator"
+								title="show input values"
+								onclick="display.value =' ' "
+							/>
+							<input
+								type="button"
+								value="DE"
+								class="operator"
+								title="show input values"
+								onclick="display.value= display.value.toString().slice(0,-1)"
+							/>
+							<input
+								type="button"
+								class="operator"
+								value="."
+								title="show input values"
+								onclick="display.value +='.'"
+							/>
+							<input
+								type="button"
+								class="operator"
+								value="/"
+								title="show input values"
+								onclick="display.value +='/'"
+							/>
+						</div>
+						<div>
+							<input
+								type="button"
+								value="7"
+								title="show input values"
+								onclick="display.value +='7' "
+							/>
+							<input
+								type="button"
+								value="8"
+								title="show input values"
+								onclick="display.value +='8' "
+							/>
+							<input
+								type="button"
+								value="9"
+								title="show input values"
+								onclick="display.value +='9' "
+							/>
+							<input
+								type="button"
+								value="*"
+								title="show input values"
+								class="operator"
+								onclick="display.value +='*' "
+							/>
+						</div>
+						<div>
+							<input
+								type="button"
+								value="4"
+								title="show input values"
+								onclick="display.value +='4' "
+							/>
+							<input
+								type="button"
+								value="5"
+								title="show input values"
+								onclick="display.value +='5' "
+							/>
+							<input
+								type="button"
+								value="6"
+								title="show input values"
+								onclick="display.value +='6' "
+							/>
+							<input
+								type="button"
+								value="-"
+								title="show input values"
+								class="operator"
+								onclick="display.value +='-' "
+							/>
+						</div>
+						<div>
+							<input
+								type="button"
+								value="1"
+								title="show input values"
+								onclick="display.value +='1' "
+							/>
+							<input
+								type="button"
+								value="2"
+								title="show input values"
+								onclick="display.value +='2' "
+							/>
+							<input
+								type="button"
+								value="3"
+								title="show input values"
+								onclick="display.value +='3' "
+							/>
+							<input
+								type="button"
+								value="+"
+								title="show input values"
+								class="operator"
+								onclick="display.value +='+' "
+							/>
+						</div>
+						<div>
+							<input
+								type="button"
+								value="00"
+								title="show input values"
+								onclick="display.value +='00' "
+							/>
+							<input
+								type="button"
+								value="0"
+								title="show input values"
+								onclick="display.value +='0' "
+							/>
+							<input
+								type="button"
+								value="="
+								class="equal operator"
+								title="show input values"
+								onclick="display.value=eval(display.value)"
+							/>
+						</div>
+					</form>
+				</div>
+			</div>
+		</main>
+	</body>
+</html>
